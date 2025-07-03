@@ -1,17 +1,12 @@
 use crate::nickel::values::NuNickelValue;
 use crate::NickelPlugin;
 use nickel_lang_core::{
-    cache::resolvers::DummyResolver,
-    eval::{cache::lazy::LazyEvalCache, VirtualMachine},
-    parser::lexer::Lexer,
-    parser::{self, ErrorTolerantParser},
     program::Program,
     serialize,
-    term::{RuntimeContract, StrChunk},
 };
 use nu_plugin::{EngineInterface, EvaluatedCall, LabeledError, PluginCommand};
 use nu_protocol::{
-    Category, Example, PipelineData, Record, ShellError, Signature, Span, SyntaxShape, Type, Value,
+    Category, Example, PipelineData, Record, Signature, Span, SyntaxShape, Type, Value,
 };
 use std::io::Cursor;
 

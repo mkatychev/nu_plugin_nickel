@@ -27,7 +27,7 @@ impl NuNickelValue {
 
     pub fn cache_and_to_value(
         plugin: &NickelPlugin,
-        engine: &EngineInterface,
+        _engine: &EngineInterface,
         value: nickel_lang_core::term::RichTerm,
         span: Span,
     ) -> Result<Value, LabeledError> {
