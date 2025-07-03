@@ -1,0 +1,23 @@
+[package]
+name = "nu_plugin_nickel"
+version = "0.1.0"
+description = "Nushell dataframe plugin to interface with Nickel types."
+
+authors = ["Mikhail Katychev <mkatych@gmail.com>"]
+license = "MIT"
+edition = "2024"
+
+[[bin]]
+name = "nu_plugin_nickel"
+bench = false
+
+[dependencies]
+nu-plugin = "0.105.1"
+nu-protocol = "0.105.1"
+nu-path = "0.105.1"
+nu-utils = "0.105.1"
+
+nickel-lang-core = "0.13.0"
+
+[dev-dependencies]
+nu-plugin-test-support = "0.105.1"

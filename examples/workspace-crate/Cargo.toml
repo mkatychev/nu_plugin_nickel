@@ -1,0 +1,16 @@
+[package]
+name = "workspace-crate"
+# this should be:
+# version.workspace = true
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+linkme = { workspace = true }
+log = { workspace = true }
+wk-panic = { workspace = true }
+wk-test-macros = { workspace = true }
+
+[lints]
+workspace = true
+
