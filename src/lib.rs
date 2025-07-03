@@ -1,5 +1,5 @@
-use nu_plugin::{serve_plugin, MsgPackSerializer, Plugin, PluginCommand, LabeledError};
-use nu_protocol::{CustomValue, PipelineData, Signature, Span, Value};
+use nu_plugin::{serve_plugin, MsgPackSerializer, Plugin, PluginCommand};
+use nu_protocol::{CustomValue, LabeledError};
 
 mod cache;
 mod nickel;
