@@ -1,3 +1,6 @@
+use nu_plugin_nickel::serve;
+
 fn main() {
-    println!("Hello, world!");
+    env_logger::init();
+    serve();
 }
