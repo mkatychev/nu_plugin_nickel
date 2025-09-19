@@ -12,18 +12,18 @@ name = "nu_plugin_nickel"
 bench = false
 
 [dependencies]
-nu-plugin = "0.105.1"
-nu-protocol = "0.105.1"
-nu-path = "0.105.1"
-nu-utils = "0.105.1"
+nu-plugin = "0.107.0"
+nu-protocol = "0.107.0"
+nu-path = "0.107.0"
+nu-utils = "0.107.0"
 
-nickel-lang-core = "0.13.0"
+nickel-lang-core = "0.14.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-typetag = "0.2.18"
-uuid = { version = "1.0", features = ["v4", "serde"] }
+typetag = "0.2.20"
+uuid = { version = "1.18", features = ["v4", "serde"] }
 env_logger = "0.11"
 chrono = { version = "0.4", features = ["serde"] }
 
 [dev-dependencies]
-nu-plugin-test-support = "0.105.1"
+nu-plugin-test-support = "0.107.0"
